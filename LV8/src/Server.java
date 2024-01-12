@@ -11,7 +11,8 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Server {
-    private static final List<String> FILTERS = Arrays.asList("curse1", "curse2", "curse3", "insult1", "insult2", "insult3");
+    private static final List<String> FILTERS = Arrays.asList("curse1", "curse2", "curse3", "insult1", "insult2",
+            "insult3");
     private final ServerSocket serverSocket;
     private final Socket socket;
     private final PrintWriter printWriter;
@@ -32,16 +33,16 @@ public class Server {
 
     private void read(BufferedReader reader) throws IOException {
         String message;
-        while((message = reader.readLine()) != null) {
+        while ((message = reader.readLine()) != null) {
             System.out.println("[CLIENT]: " + message);
 
             String filter;
             StringBuilder builder;
-            for(Iterator var3 = FILTERS.iterator(); var3.hasNext(); message = message.replaceAll(filter, builder.toString())) {
-                filter = (String)var3.next();
+            for (Iterator<String> var3 = FILTERS.iterator(); var3
+                    .hasNext(); message = message.replaceAll(filter, builder.toString())) {
+                filter = var3.next();
                 builder = new StringBuilder();
-
-                for(int i = 0; i < filter.length(); ++i) {
+                for (int i = 0; i < filter.length(); ++i) {
                     builder.append("*");
                 }
             }
