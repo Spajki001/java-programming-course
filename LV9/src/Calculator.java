@@ -67,7 +67,7 @@ public class Calculator {
         panel.setBorder(BorderFactory.createEmptyBorder(
                 30, 30, 30, 30));
         panel.setLayout(new GridLayout(5, 2));
-        panel.setBackground(Color.white);
+        panel.setBackground(Color.decode("#c4c4c4"));
 
         // Adding components on the panel
 
