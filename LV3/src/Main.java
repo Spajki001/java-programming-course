@@ -20,12 +20,14 @@ public class Main {
             bool = false;
             try {
                 choice = input.nextInt();
-            } catch(InputMismatchException greska){
+            } catch (InputMismatchException greska) {
                 bool = true;
                 System.out.println("NIJE BROJ!\n");
+            } finally {
+                input.close();
             }
-        }while(bool);
-        switch (choice){
+        } while (bool);
+        switch (choice) {
             case 1:
                 AM.arithmMiddle(n);
                 break;

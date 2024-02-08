@@ -6,12 +6,13 @@ public class PrintOdd {
         int[] polje = new int[n];
         int brojevi;
         Scanner ulaz = new Scanner(System.in);
-        for(int i = 0; i < n;i++) {
+        for (int i = 0; i < n; i++) {
             brojevi = ulaz.nextInt();
             polje[i] = brojevi;
         }
+        ulaz.close(); // Close the Scanner object
         System.out.print("Odd numbers are: ");
-        for(int i = 0; i < n;i++) {
+        for (int i = 0; i < n; i++) {
             if (polje[i] % 2 != 0) {
                 System.out.print(polje[i]);
             }

@@ -10,6 +10,7 @@ public class SumEven {
             brojevi = ulaz.nextInt();
             polje[i] = brojevi;
         }
+        ulaz.close(); // Close the Scanner
         for (int i = 0; i < n; i++) {
             if (polje[i] % 2 == 0) {
                 suma += polje[i];

@@ -17,5 +17,6 @@ public class ArithmMiddle {
         }
         arithm = suma / n;
         System.out.println("Arithmetic middle of entered numbers is: " + arithm);
+        ulaz.close();
     }
 }
