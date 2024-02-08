@@ -7,7 +7,7 @@ public class Zad2 {
 
         zaposlenik = new Zaposlenik(210, 30, 6500.0f);
         System.out.println(zaposlenik);
-        System.out.println("Placa: " + Zaposlenik.izarcunajPlacu(zaposlenik));
+        System.out.println("Placa: " + Zaposlenik.izracunajPlacu(zaposlenik));
     }
 
 }

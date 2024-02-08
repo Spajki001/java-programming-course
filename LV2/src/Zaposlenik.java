@@ -49,7 +49,7 @@ public class Zaposlenik {
                 '}';
     }
 
-    public static float izarcunajPlacu(Zaposlenik zaposlenik) {
+    public static float izracunajPlacu(Zaposlenik zaposlenik) {
         return (zaposlenik.staz * 12.0f) * zaposlenik.placa;
     }
 

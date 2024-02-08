@@ -16,7 +16,7 @@ public class Test {
 
         zaposlenik = new Zaposlenik(10, 40, 26500.0f);
         System.out.println(zaposlenik);
-        System.out.println("Placa: " + Zaposlenik.izarcunajPlacu(zaposlenik));
+        System.out.println("Placa: " + Zaposlenik.izracunajPlacu(zaposlenik));
     }
 
 }
